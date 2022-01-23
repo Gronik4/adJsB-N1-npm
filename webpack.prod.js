@@ -1,6 +1,6 @@
 const { merge } = require('webpack-merge');
 const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
-// const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -8,7 +8,7 @@ module.exports = merge(common, {
   optimization: {
     minimize: true,
     minimizer: [
-      // new TerserPlugin({}),
+      new TerserPlugin({}),
       new OptimizeCSSAssetsPlugin({}),
       '...',
     ],
