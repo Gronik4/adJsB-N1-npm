@@ -5,8 +5,6 @@ stack: node 14  # окружение
 branches:
   only:
     - master  # ветка git
-  except:
-    - gh-pages
 
 cache: node_modules  # кеширование
 
