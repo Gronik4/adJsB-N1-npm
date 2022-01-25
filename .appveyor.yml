@@ -22,7 +22,7 @@ build_script:
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
-  - git config --global Gronik64 AppVeyor
+  - git config --global Gronik4 AppVeyor
   - git config --global golegni@yandex.ru ci@appveyor.com
   - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - npx push-dir --dir=dist --branch=gh-pages --force --verbose
