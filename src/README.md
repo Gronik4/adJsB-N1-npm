@@ -1,5 +1,5 @@
 # "Continuous Deployment"
-ДЗ по теме "Continuous Deployment" 
+ДЗ по теме "Continuous Deployment" на npm 
 ## 'Описание'
 Воспользуйтесь пошаговой инструкцией к лекции, чтобы развернуть тестирование, сборку и deployment на AppVeyor и GitHub Pages. 
   
