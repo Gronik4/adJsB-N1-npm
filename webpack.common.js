@@ -7,7 +7,7 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: './',
+    // publicPath: './',
   },
   optimization: {
     minimize: true,
@@ -38,6 +38,10 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        type: 'asset/inline',
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
     ],
